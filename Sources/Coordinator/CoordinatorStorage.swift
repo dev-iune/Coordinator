@@ -11,7 +11,7 @@ public class CoordinatorStorage
 {
     private var list: [ParentCoordinatorType]
     
-    init()
+    public init()
     {
         self.list = [ParentCoordinatorType]()
     }
