@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol PresentableType: AnyObject
+public protocol PresentableType: AnyObject
 {
     var id: UUID { get }
     var presentable: UIViewController { get }

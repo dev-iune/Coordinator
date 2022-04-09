@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CoordinatorStorage
+public class CoordinatorStorage
 {
     private var list: [ParentCoordinatorType]
     
@@ -20,12 +20,12 @@ class CoordinatorStorage
 // MARK: - CoordinatorStoreType
 extension CoordinatorStorage: CoordinatorStorageType
 {
-    func store(_ presentable: ParentCoordinatorType)
+    public func store(_ presentable: ParentCoordinatorType)
     {
         self.list.append(presentable)
     }
     
-    func release(coordinatorWithId id: UUID)
+    public func release(coordinatorWithId id: UUID)
     {
         let coordinatorsWithId = self.list.filter({ $0.id == id })
         
@@ -36,7 +36,7 @@ extension CoordinatorStorage: CoordinatorStorageType
         self.list.removeAll(where: { $0.id == id })
     }
     
-    func clear()
+    public func clear()
     {
         self.list.forEach({ parent in
             parent.coordinatorStorage.clear()

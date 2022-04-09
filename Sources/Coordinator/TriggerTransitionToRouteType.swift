@@ -8,7 +8,7 @@
 import RxSwift
 import RxCocoa
 
-protocol TriggerTransitionToRouteType: AnyObject
+public protocol TriggerTransitionToRouteType: AnyObject
 {
     associatedtype Route: RouteType
     

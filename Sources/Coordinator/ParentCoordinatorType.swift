@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ParentCoordinatorType
+public protocol ParentCoordinatorType
 {
     var id: UUID { get }
     var coordinatorStorage: CoordinatorStorageType { get }

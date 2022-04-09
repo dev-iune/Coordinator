@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CoordinatorStorageType: AnyObject
+public protocol CoordinatorStorageType: AnyObject
 {
     func store(_: ParentCoordinatorType)
     func release(coordinatorWithId: UUID)
