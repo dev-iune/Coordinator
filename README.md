@@ -1,3 +1,3 @@
 # Coordinator
 
-A description of this package.
+My implementation of the Coordinator pattern for iOS apps with UIKit.
